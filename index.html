@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional portfolio of Abiola David Olaoluwa" />
+  <title>Abiola David Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="abioladavid.css" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <nav class="nav-container">
+    <div class="logo">
+      <h5>Welcome: Click the blog to read my article</h5>
+    </div>
+    <div class="hamburger" aria-expanded="false">☰</div>
+    <div class="nav-content">
+      <div class="nav-links">
+        <a href="#home" class="nav-button active">Home</a>
+        <a href="#about" class="nav-button">About</a>
+        <a href="#education" class="nav-button">Education</a>
+        <a href="#skills" class="nav-button">Skills</a>
+        <a href="#projects" class="nav-button">Projects</a>
+        <a href="#experience" class="nav-button">Experience</a>
+        <a href="#contact" class="nav-button">Contact</a>
+        <a href="my_resume.pdf" class="nav-button" download>Download CV</a>
+        <a href="https://abioladavid.github.io/BlogPost/" class="nav-button" target="_blank">Blog</a>
+      </div>
+      <div class="external-links">
+        <a href="https://github.com/yourusername" target="_blank" class="nav-button">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="content-section hero" aria-hidden="false">
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Profile Picture" class="hero-profile-pic">
+        <h1>Abiola David</h1>
+        <p class="hero-roles">AI Data Annotation Specialist | Python Automation Engineer | Prompt Engineer</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I am a passionate and results-driven AI Data Annotation Specialist, Python Automation Engineer, and Prompt Engineer with a 
+          knack for leveraging technology to solve real-world problems. With a strong foundation in computer science, I excel at curating 
+          high-quality datasets for AI models, automating workflows with Python, and designing effective prompt templates for large language models. 
+          My work is driven by a commitment to precision, efficiency, and innovation, ensuring impactful solutions that meet business needs. When I'm not 
+          coding or annotating data, I enjoy exploring new tech trends, 
+          contributing to open-source projects, and sharing insights through my blog.</p>
+      </div>
+    </section>
+
+    <section id="education" class="content-section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="edu-card">
+          <h3>B.Sc. Sociology and Anthropological Studies</h3>
+          <h4>Federal University Of Lafia <strong>2024 (In View)</strong></h4>
+          <p>Sociology is the scientific study of society, social relationships, institutions, and patterns of behavior. It seeks to understand how individuals interact 
+            within groups and how social structures shape human experience. Anthropological studies focus on the holistic understanding of humanity, examining cultural, 
+            biological, archaeological, and linguistic aspects of human life across time and space. It explores human diversity, evolution, traditions, and the meanings 
+            people attach to their ways of life. Together, both fields offer critical insight into human behavior, social change, and cultural complexity, 
+            forming the backbone of social science inquiry.</p>
+        </div>
+        <!-- Add more edu-card entries as needed -->
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h2>Skills & Certifications</h2>
+      <div class="skills-grid">
+        <div class="skill-card" onclick="openModal('data_analytics.png', 'Data Analytics')">
+          <h3>Data Analytics</h3>
+          <p>Click to view certificate</p>
+        </div>
+        <div class="skill-card" onclick="openModal('prompt_engineer.png', 'Prompt Engineering')">
+          <h3>Prompt Engineering</h3>
+          <p>Click to view certificate</p>
+        </div>
+        <div class="skill-card" onclick="openModal('ai_career_essential.png', 'AI Career Essential')">
+          <h3>AI Career Essential</h3>
+          <p>Click to view certificate</p>
+        </div>
+        <div class="skill-card" onclick="openModal('virtual_assistant.png', 'Python Automation')">
+          <h3>Virtual Assistant</h3>
+          <p>Click to view certificate</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="openProjectGallery('email_automation')">
+          <img src="email_automation.jpg" alt="Email Automation">
+          <h4>Email Automation System</h4>
+          <p>Automated email workflows using Python and smtplib.</p>
+        </div>
+        <div class="project-card" onclick="openProjectGallery('annotation_pipeline')">
+          <img src="ai_display.jpg" alt="Annotation Pipeline">
+          <h4>Annotation Pipeline For Computer Vision</h4>
+          <p>Streamlined AI data annotation with Labelme and Python.</p>
+        </div>
+        <div class="project-card" onclick="openProjectGallery('prompt_library')">
+          <img src="prompt_engineering.jpg" alt="Prompt Library">
+          <h4>Generative AI</h4>
+          <p>Generate Text and Image Content using LLM API and Interface.</p>
+        </div>
+        <div class="project-card" onclick="openProjectGallery('Data_Analytics')">
+          <img src="monthly_sales_chart.png" alt="Data Analytics">
+          <h4>Data Analytics Library</h4>
+          <p>Analyse and Visualize Data using Excel, Python, and PowerBI</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="exp-card">
+          <h3>AI Data Annotation Specialist</h3>
+          <h4>AB-INBEV</h4>
+          <p>Responsible for pre/post validation and segmentation annotation using Labelme in Anaconda. Automated validation using Python and Excel. Delivered quality data for Detectron2 CV models.</p>
+        </div>
+        <div class="exp-card">
+          <h3>Email Automation Engineer</h3>
+          <h4>Techie Gigs</h4>
+          <p>Built Python-based email systems using smtplib. Created dynamic HTML templates. Parsed Excel lists. No third-party software needed.</p>
+        </div>
+        <div class="exp-card">
+          <h3>Prompt Engineer</h3>
+          <h4>AB-INBEV</h4>
+          <p>Designed persuasive prompts for stock alerts, out-of-stock, predictions using LLM APIs and interface. Saved templates in CSV format. Built prompt libraries with categories.</p>
+        </div>
+        <div class="exp-card">
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <form id="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+          <div class="contact-info">
+            <div class="social-links">
+              <a href="mailto:dabiola94@gmail.com"><i class="fas fa-envelope icon"></i> Email</a>
+              <a href="tel:+2349034927148"><i class="fas fa-phone icon"></i> Phone</a>
+              <a href="https://github.com/AbiolaDavid" target="_blank"><i class="fab fa-github icon"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/abiola-david001" target="_blank"><i class="fab fa-linkedin icon"></i> LinkedIn</a>
+              <a href="https://www.facebook.com/share/1ALnHuHSFi/" target="_blank"><i class="fab fa-facebook icon"></i> Facebook</a>
+              <a href="https://x.com/@AbiolaDavi64527" target="_blank"><i class="fab fa-x-twitter icon"></i> X</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Certificate Modal -->
+  <div id="certificate-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <h3 id="certificate-title"></h3>
+      <img id="certificate-image" src="" alt="Certificate Image" />
+    </div>
+  </div>
+
+  <!-- Project Gallery Modal -->
+  <div id="project-gallery" class="modal-gallery">
+    <div class="modal-gallery-content">
+      <span class="modal-close">×</span>
+      <img id="gallery-image" src="" alt="Gallery Image" />
+      <div id="gallery-caption"></div>
+      <span class="gallery-nav gallery-prev">❮</span>
+      <span class="gallery-nav gallery-next">❯</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="abioladavid.js"></script>
+</body>
+</html>
